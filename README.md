@@ -1,2 +1,3 @@
-# dvx-front-end-app
-Simple Front End App Starter Template
+# DvX - Simple Front End App Starter Template
+
+## Yarn install
