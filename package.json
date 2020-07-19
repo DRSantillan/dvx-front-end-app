@@ -5,21 +5,26 @@
   "repository": "git@github.com:DRSantillan/dvx-front-end-app.git",
   "author": "Dean <dean@deansantillan.com>",
   "license": "MIT",
-"scripts": {
+  "scripts": {
     "babel": "babel src -d dist",
     "dev": "webpack --watch --mode=development ",
-    "pro": "webpack --mode=production"
+    "pro": "webpack --mode=production",
+    "sass": "node-sass --watch src/scss -o dist/assets/css --output-style compressed",
+    "live": "live-server",
+    "start": "yarn dev & yarn sass & yarn live"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
     "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^3.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "@babel/polyfill": "^7.7.0"
+    "webpack-cli": "^3.3.10"
   }
 }
